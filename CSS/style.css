@@ -2,6 +2,7 @@
 
 @import "style_foot_head.css";
 @import "subscribe.css";
+@import "flipcard.css"
 
 html{
     color: rgb(58, 56, 56);
