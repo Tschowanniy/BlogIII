@@ -4,13 +4,13 @@
 @import "subscribe.css";
 @import "flipcard.css";
 
-html{
+html {
     color: rgb(58, 56, 56);
     font-family: verdana;
 }
 
 
-body{
+body {
     padding-top: 60px;
     padding-bottom: 15px;
     width: 100%;
@@ -19,50 +19,52 @@ body{
 }
 
 
-article{
+article {
     min-height: 100%;
 }
 
-.box{
+.box {
     border: solid red 0px;
 }
-.box1{
+
+.box1 {
     border: solid red 1px;
 }
-.box2{
+
+.box2 {
     border: solid blue 1px;
 }
 
-.title_link{
+.title_link {
     color: white;
 }
 
-.sidebar{
+.sidebar {
     grid-area: sidebar;
 }
 
-.content{
+.content {
     grid-area: main;
     display: grid;
     column-gap: 1px;
 }
 
-.content-item{
+.content-item {
     display: flex;
-    padding: 0 0 0 0;    
+    padding: 0 0 0 0;
 }
 
-.link_preview{
-    display:grid;        
-    grid-template-columns: 90px 180px; 
+.link_preview {
+    display: grid;
+    grid-template-columns: 90px 180px;
     grid-template-rows: 90px;
-    grid-template-areas: 
-      "a b";
+    grid-template-areas:
+        "a b";
     border-radius: 6px;
     padding: 5px;
 }
 
-.link{
+.link {
     display: flex;
     font-size: large;
     grid-area: b;
@@ -72,50 +74,51 @@ article{
     vertical-align: middle;
     border-radius: 6px;
 }
-.pic{
+
+.pic {
     border: 2px solid black;
     grid-area: a;
     border-radius: 6px;
     width: 100%;
     height: 100%
-
 }
 
-.fig_r40{
+.fig_r40 {
     width: 40%;
 }
-.fig_l60{
+
+.fig_l60 {
     width: 60%;
 }
 
-.fig_r60{
+.fig_r60 {
     width: 60%;
 }
-.fig_l40{
+
+.fig_l40 {
     width: 40%;
 }
 
 
 /*abhänging von Screensize*/
-.container { 
-display: grid;
-grid-template-columns: 320px auto;
-grid-template-rows: 1fr; 
-grid-template-areas: 
-    "sidebar main";
+.container {
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "sidebar main";
 }
 
 
 
-@media (max-width:600px)
-{
-    .container { 
+@media (max-width:600px) {
+    .container {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 1fr; 
-        grid-template-areas: 
+        grid-template-rows: 1fr;
+        grid-template-areas:
             "sidebar"
-             "main";
-        }
+            "main";
+    }
 
 }

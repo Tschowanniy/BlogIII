@@ -1,28 +1,31 @@
 /*I'd like to have a fixed header and footer at all times, when scrolling on large and small screens*/
 
-header{
+header {
     display: flex;
     justify-content: center;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: left;
     align-content: center;
 }
 
-.fixed_header, .fixed_footer{
+.fixed_header,
+.fixed_footer {
     width: 100%;
     position: fixed;
     background: rgb(30, 56, 65);
     color: #fff;
 }
 
-.fixed_header{
+.fixed_header {
     top: 0;
     left: 0;
     height: 75px;
 }
-.fixed_footer{
+
+.fixed_footer {
     bottom: 0;
     left: 0;
     height: 30px;
