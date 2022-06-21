@@ -36,6 +36,16 @@ article {
     color: white;
 }
 
+
+/*abhänging von Screensize*/
+.container {
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "sidebar main";
+}
+
 .content-item {
     display: flex;
     padding: 0 0 0 0;
@@ -57,10 +67,35 @@ article {
     width: 40%;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 320px auto;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "main";
+
+@media (max-width:600px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "sidebar"
+            "main";
+    }
+    
+    .content-item {
+        display: grid;
+        padding: 0 0 0 0;
+    }
+    .fig_r40 {
+        width: 80%;
+    }
+    
+    .fig_l60 {
+        width: 80%;
+    }
+    
+    .fig_r60 {
+        width: 80%;
+    }
+    
+    .fig_l40 {
+        width: 80%;
+    }
+
 }

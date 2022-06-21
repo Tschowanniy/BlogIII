@@ -49,10 +49,6 @@ article {
     column-gap: 1px;
 }
 
-.content-item {
-    display: flex;
-    padding: 0 0 0 0;
-}
 
 .link_preview {
     display: grid;
@@ -83,6 +79,21 @@ article {
     height: 100%
 }
 
+
+/*abhänging von Screensize*/
+.container {
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "sidebar main";
+}
+
+.content-item {
+    display: flex;
+    padding: 0 0 0 0;
+}
+
 .fig_r40 {
     width: 40%;
 }
@@ -100,17 +111,6 @@ article {
 }
 
 
-/*abhänging von Screensize*/
-.container {
-    display: grid;
-    grid-template-columns: 320px auto;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "sidebar main";
-}
-
-
-
 @media (max-width:600px) {
     .container {
         display: grid;
@@ -119,6 +119,26 @@ article {
         grid-template-areas:
             "sidebar"
             "main";
+    }
+    
+    .content-item {
+        display: grid;
+        padding: 0 0 0 0;
+    }
+    .fig_r40 {
+        width: 80%;
+    }
+    
+    .fig_l60 {
+        width: 80%;
+    }
+    
+    .fig_r60 {
+        width: 80%;
+    }
+    
+    .fig_l40 {
+        width: 80%;
     }
 
 }
